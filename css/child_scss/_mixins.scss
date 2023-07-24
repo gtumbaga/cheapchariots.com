@@ -1,0 +1,6 @@
+@mixin rounded-corners($size) {
+	-moz-border-radius: $size;
+	-webkit-border-radius: $size;
+	border-radius: $size;
+	-khtml-border-radius: $size;
+}

@@ -1,0 +1,30 @@
+@media handheld, only screen and (max-width: 767px) {
+    #front-pods {
+        table {
+
+            &, tr, td, tbody {
+                display: block;
+            }
+
+
+        .pod {
+            width: 100%;
+            max-width: 480px;
+            margin: 10px auto;
+        }
+
+        }
+    }
+    .navbar .nav>li {
+        background: $color-black;
+        border-bottom: solid 4px $color-white;
+    }
+
+    // #cars-holder {
+    //     .inner {
+    //         label, .data {
+    //             float: none !important;
+    //         }
+    //     }
+    // }
+}

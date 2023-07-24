@@ -1,0 +1,12 @@
+// Mixins & Variables
+@import "child_scss/mixins";
+@import "child_scss/variables";
+
+
+// Setup
+@import "child_scss/type";
+
+
+// Layout
+@import "child_scss/main";
+@import "child_scss/responsive";

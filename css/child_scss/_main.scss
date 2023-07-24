@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000 url(../img/bg-body.png) repeat-x;
+    background-size: 2px 533px;
+    padding-top: 50px;
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, $color-gold, #a37b03, $color-gold);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Impact Regular', 'Impact', sans-serif;
+}
+
+h5 {
+    font-size: 30px;
+    color: $color-gold;
+}
+h6 {
+    font-size: 18px;
+}
+
+.right-20 {
+    margin-right: 20px;
+}
+
+.btn {
+    &.btn-default {
+        background: $color-gold;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+    &.fixed-width {
+        width: 240px;
+        text-align: center;
+    }
+    &.full-width {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.container {
+    max-width: 970px;
+}
+
+.navbar {
+    height: 75px;
+    background: url(../img/bg-menu.png) repeat-x;
+    background-size: 2px 75px;
+
+    .nav > li {
+        height: 75px;
+
+        a {
+            height: 75px;
+            line-height: 71px;
+            padding: 0 20px;
+            font-family:  'Trebuchet MS Bold', 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: transparent !important;
+
+
+            &:hover {
+                background: url(../img/bg-menu-hover.png) repeat-x !important;
+                background-size: 2px 75px !important;
+                color: $color-white;
+            }
+        }
+        &.active a,
+        body#home & a#menu-home,
+        body#sales & a#menu-sales,
+        body#rentlease & a#menu-rentlease,
+        body#services & a#menu-services,
+        body#about & a#menu-about,
+        body#contact & a#menu-contact
+        {
+            background: url(../img/bg-menu-hover.png) repeat-x !important;
+            background-size: 2px 75px !important;
+            color: $color-white;
+        }
+    }
+}
+
+#top-hero {
+    height: 318px;
+    background: url(../img/header-cars.png) bottom center no-repeat;
+    background-size: 1754px 318px;
+    margin-top: 26px;
+
+    .inner {
+        position: relative;
+    }
+
+    #header-logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 285px;
+        height: 131px;
+        margin-top: 10px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+#front-pods {
+    margin-left: -10px;
+    margin-right: -10px;
+
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+
+        td {
+            position: relative;
+            width: 33%;
+            padding: 10px;
+            background: #fff url(../img/bg-front-pods-bar.png) bottom center repeat-x;
+            background-size: 2px 51px;
+            vertical-align: top;
+
+            .inner {
+                min-height: 200px;
+                position: relative;
+                padding-bottom: 100px;
+
+                background: url(../img/bg-front-pods-car.png) center center no-repeat;
+                background-size: 285px 99px;
+            }
+
+            h4 {
+                font-family: 'Impact Regular', 'Impact', sans-serif;
+                text-align: center;
+                font-size: 36px;
+                text-transform: uppercase;
+                color: $color-black;
+                font-weight: normal;
+                line-height: 1;
+            }
+
+
+            .tab {
+                position: absolute;
+                right: 20px;
+                bottom: 30px;
+                display: block;
+                width: 123px;
+                height: 21px;
+                line-height: 21px;
+
+                background: url(../img/bg-front-pods-tab.png) center center no-repeat;
+                background-size: 123px 21px;
+
+                text-align: center;
+
+                font-family: 'Impact Regular', 'Impact', sans-serif;
+                font-weight: normal;
+                color: $color-gold;
+                font-size: 12px;
+                text-decoration: none !important;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#main-content {
+    background: $color-white;
+    padding: 20px 20px 0px 20px;
+
+    .buttons-holder {
+        padding: 20px 0;
+    }
+}
+
+#search-form-holder {
+    margin-top: 60px;
+
+    .field_and_button-holder {
+        position: relative;
+
+        .submit-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 50px;
+
+            background: $color-gold;
+            border: none;
+            color: $color-white;
+        }
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 20px 60px 20px 10px;
+        font-size: 20px;
+        border: solid 1px $color-gold !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .dropdown-menu {
+        width: 240px;
+        .title {
+            padding-left: 10px;
+            background: $color-gold;
+            color: $color-white;
+        }
+    }
+}
+
+#cars-holder {
+    h3 {
+        margin-top: 0;
+    }
+    img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    label {
+        width: 100px;
+        font-size: 14px;
+    }
+    .car-holder {
+        margin-bottom: 40px;
+    }
+
+    .generic-details {
+        font-size: 18px;
+    }
+    .btn {
+        margin: 10px 0 20px 0;
+    }
+    pre {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+}
+
+#filters-holder {
+    select {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .filter-holder {
+        margin-bottom: 20px;
+    }
+}
+
+#footer-links {
+    height: 91px;
+    line-height: 98px;
+    padding: 0 20px;
+
+    background: url(../img/bg-footer-links.png) repeat-x;
+
+    ul {
+        &, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    &, a {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Trebuchet MS Bold", "Trebuchet MS", sans-serif;
+        font-size: 12px;
+        display: block;
+        padding: 0 10px;
+    }
+}
+
+footer {
+    color: $color-white;
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 20px 0;
+
+    a, a:hover {
+        color: $color-gold;
+    }
+}

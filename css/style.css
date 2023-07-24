@@ -1,0 +1,17 @@
+body {
+  background: #000 url(../img/bg-body.png) repeat-x;
+  background-size: 2px 533px;
+  padding-top: 50px; }
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center; }
+
+.navbar {
+  height: 75px;
+  background: url(../img/bg-menu.png) repeat-x;
+  background-size: 2px 75px; }
+  .navbar .nav > li {
+    height: 75px; }
+
+/*# sourceMappingURL=style.css.map */
