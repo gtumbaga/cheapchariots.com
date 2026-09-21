@@ -52,7 +52,11 @@
           <p><a href="grant.html">Grant request letter</a></p>
         </div>
       </div>
-      <form action="mailto:info@cheapchariots.com" method="post" enctype="text/plain">
+      <form action="https://cheapchariots-form-handler.gatumbaga.workers.dev/" method="post">
+        <input type="hidden" name="form" value="Contact Message" />
+        <div style="position:absolute;left:-9999px;" aria-hidden="true">
+          <label>Leave this field blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+        </div>
         <input name="name" type="text" placeholder="Full name" required />
         <input name="email" type="email" placeholder="Email" required />
         <input name="phone" type="tel" placeholder="Phone" />
