@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Driver Application | Cheap Chariots Transportation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="wrap nav-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="partners.html">Partners</a>
+      <a class="active" href="drivers.html">Drive</a>
+      <a href="future.html">Future</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid single">
+      <div>
+        <div class="brand-lockup"><img src="header-logo.png" alt="Cheap Chariots" /></div>
+        <p class="eyebrow">Join our team · Drive change</p>
+        <h1>Driver <span class="gold">application</span></h1>
+        <p class="lead">Safe drivers. Stronger communities. Also hiring for fleet cleaning and maintenance — <a href="maintenance.html" style="color:var(--gold-bright);text-decoration:underline;">apply here</a>.</p>
+      </div>
+    </div>
+  </section>
+  <div class="gold-bar"></div>
+
+  <section class="contact">
+    <div class="wrap">
+      <form class="form-card" action="mailto:info@cheapchariots.com" method="post" enctype="text/plain">
+        <input type="hidden" name="form" value="Driver Application" />
+        <h3>Personal information</h3>
+        <p class="hint">Do not include a full Social Security number. Last four digits only if you choose to provide them.</p>
+        <fieldset class="fieldset">
+          <div class="row"><div><label class="field">Full Name</label><input name="full_name" required /></div></div>
+          <div class="row row-2">
+            <div><label class="field">Date of Birth</label><input name="dob" type="date" /></div>
+            <div><label class="field">SSN (last 4 only)</label><input name="ssn4" maxlength="4" inputmode="numeric" /></div>
+          </div>
+          <div class="row"><div><label class="field">Address</label><input name="address" /></div></div>
+          <div class="row row-3">
+            <div><label class="field">City</label><input name="city" /></div>
+            <div><label class="field">State</label><input name="state" /></div>
+            <div><label class="field">ZIP</label><input name="zip" /></div>
+          </div>
+          <div class="row row-2">
+            <div><label class="field">Phone</label><input name="phone" type="tel" required /></div>
+            <div><label class="field">Email</label><input name="email" type="email" required /></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Driver’s license information</legend>
+          <div class="row row-2">
+            <div><label class="field">License Number</label><input name="license" /></div>
+            <div><label class="field">State</label><input name="license_state" /></div>
+          </div>
+          <div class="row row-2">
+            <div><label class="field">Expiration Date</label><input name="license_exp" type="date" /></div>
+            <div>
+              <label class="field">CDL (if applicable)</label>
+              <select name="cdl"><option value="">Select</option><option>Yes</option><option>No</option></select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Employment history</legend>
+          <div class="row row-2">
+            <div><label class="field">Previous Employer</label><input name="emp1" /></div>
+            <div><label class="field">Position</label><input name="pos1" /></div>
+          </div>
+          <div class="row row-2">
+            <div><label class="field">Dates From</label><input name="emp1_from" /></div>
+            <div><label class="field">Dates To</label><input name="emp1_to" /></div>
+          </div>
+          <div class="row row-2">
+            <div><label class="field">Previous Employer</label><input name="emp2" /></div>
+            <div><label class="field">Position</label><input name="pos2" /></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Availability</legend>
+          <div class="check-list">
+            <label><input type="checkbox" name="ft" /> Full-Time</label>
+            <label><input type="checkbox" name="pt" /> Part-Time</label>
+            <label><input type="checkbox" name="flex" /> Flexible</label>
+          </div>
+          <div class="row" style="margin-top:12px;"><div><label class="field">Preferred Schedule</label><input name="schedule" /></div></div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>References</legend>
+          <div class="row row-2">
+            <div><label class="field">Reference 1 Name</label><input name="ref1" /></div>
+            <div><label class="field">Phone</label><input name="ref1_phone" /></div>
+          </div>
+          <div class="row row-2">
+            <div><label class="field">Reference 2 Name</label><input name="ref2" /></div>
+            <div><label class="field">Phone</label><input name="ref2_phone" /></div>
+          </div>
+        </fieldset>
+        <button class="btn" type="submit">Apply Today</button>
+      </form>
+
+      <form class="form-card" action="mailto:info@cheapchariots.com" method="post" enctype="text/plain">
+        <input type="hidden" name="form" value="Driver Waiver" />
+        <h3>Driver waiver &amp; release of liability</h3>
+        <p class="hint">Safety · Responsibility · Community. This web form records your acknowledgment. CCT may still require a wet-ink or e-signed original.</p>
+        <div class="row"><div><label class="field">I (full legal name / “Driver”)</label><input name="driver_name" required /></div></div>
+        <div class="legal">
+          <p>I acknowledge and agree that Cheap Chariots Transportation (CCT) is providing transportation services using Tesla vehicles. I understand that driving involves inherent risks, and I voluntarily assume all risks associated with participating in this program.</p>
+          <p style="margin-top:10px;">I hereby release, waive, and discharge CCT, its owners, officers, employees, and agents from any and all claims, liabilities, or damages arising from my participation, except in cases of gross negligence or willful misconduct.</p>
+        </div>
+        <div class="check-list">
+          <label><input type="checkbox" name="agree_waiver" required /> I have read, understand, and agree to the terms of this waiver.</label>
+        </div>
+        <div class="row row-3" style="margin-top:14px;">
+          <div><label class="field">Printed Name</label><input name="printed_name" required /></div>
+          <div><label class="field">Driver License #</label><input name="dl" /></div>
+          <div><label class="field">State</label><input name="dl_state" /></div>
+        </div>
+        <div class="legal" style="margin-top:16px;">
+          <strong>Driver participation</strong>
+          <p style="margin-top:8px;">I acknowledge and agree to participate in the CCT program, including background checks, vehicle operation, and adherence to all company policies and safety guidelines.</p>
+        </div>
+        <div class="check-list">
+          <label><input type="checkbox" name="agree_program" required /> I agree to participate under CCT policies and safety guidelines.</label>
+        </div>
+        <div class="row"><div><label class="field">Date</label><input name="date" type="date" /></div></div>
+        <button class="btn" type="submit">Submit Waiver Acknowledgment</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <img src="header-logo.png" alt="" width="160" />
+      <div class="tagline">Apply today · Safe drivers. Stronger communities.</div>
+      <div><a href="tel:5102996199">(510) 299-6199</a></div>
+    </div>
+  </footer>
+</body>
+</html>
